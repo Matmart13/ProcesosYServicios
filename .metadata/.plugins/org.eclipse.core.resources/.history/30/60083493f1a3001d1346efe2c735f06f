@@ -1,0 +1,46 @@
+package Ejemplo4;
+
+import java.security.MessageDigest;
+import java.security.Provider;
+
+public class Contraseñas {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		MessageDigest md;
+		try {
+			//md = MessageDigest.getInstance("SHA-256");
+			md = MessageDigest.getInstance("MD5");
+			//String clave = "1234";
+			String texto = "1234";//Contraseña que se pone
+			
+			
+			byte dataBytes[] = texto.getBytes();
+			md.update(dataBytes);//Se introduce texto a resumir
+			//byte resumen[] = md.digest(); //Se calcula el resumen 
+			byte resumen[] = md.digest(); //Poniendo este nivel se añade mas dificultad para sacar la contraseña 
+			
+			System.out.println("Mensaje original: "+ texto );
+			System.out.println("Numero de Bytes: " + md.getDigestLength());
+			System.out.println("Algoritmo: " + md.getAlgorithm());
+			System.out.println("Mensaje resumen: " + new String(resumen)); //Es la contraseña del usuario
+			System.out.println("Mensaje en Hexadecimal:" + Hexadecimal(resumen));
+			Provider proveedor = md.getProvider();
+			System.out.println("Proveedor: " + proveedor.toString());
+		} catch (Exception e) {
+			// TODO: handle exception
+			e.printStackTrace();
+		}
+	}
+	//Convierte un array de bytes a hexadecimal
+	static String Hexadecimal(byte[] resumen) {
+		String hex = " ";
+		for (int i = 0; i < resumen.length; i++) {
+			String h = Integer.toHexString(resumen[i] & 0xFF);
+			if(h.length() == 1)
+				hex+= "0";
+			hex += h;
+		}
+		return hex.toUpperCase();
+	}
+}

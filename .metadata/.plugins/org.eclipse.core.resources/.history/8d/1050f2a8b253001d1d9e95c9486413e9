@@ -1,0 +1,10 @@
+package Direcciones;
+
+public class Ejemplo1URL {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		URL url;
+	}
+
+}

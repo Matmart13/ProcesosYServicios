@@ -1,0 +1,5 @@
+//Politica2.policy
+grant{
+//permission java.io.FilePermission "C:\\Users\\marti\\OneDrive\\DAM\\2ºAÑO\\Procesos y Servicios\\Encriptacion\\src\\Ejemplo2\\ejemplo.txt","write";
+permission java.io.FilePermission "C:\\Users\\marti\\OneDrive\\DAM\\2ºAÑO\\Procesos y Servicios\\Encriptacion\\src\\Ejemplo2\\ejemplo.txt","read,write";
+};

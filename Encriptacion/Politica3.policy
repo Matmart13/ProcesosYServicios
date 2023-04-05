@@ -1,0 +1,4 @@
+//Politica 3
+grant{
+	permission java.net.SocketPermission "localhost:6000","connect";
+};

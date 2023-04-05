@@ -1,0 +1,28 @@
+package Direcciones;
+
+import java.net.URL;
+
+public class Ejemplo1URL {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		URL url;
+		try {
+			System.out.println("Constructor simple para una URL:");
+			url = new URL("https://www.google.com/");
+			Visualizar(url);
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+	}
+	@SuppressWarnings("unused")
+	private static void Visualizar( URL _url) {
+		System.out.println("\tURL completa: " + _url.toString());
+		System.out.println("\tgetProtocol (): " + _url.getProtocol());
+		System.out.println("\tgetHost(): " + _url.getHost());
+		System.out.println("\tgetPort(): " + _url.getPort());
+		System.out.println("\tgetFile(): " + _url.getFile());
+		System.out.println("\tgetUserInfo(): " +_url.getUserInfo());
+	}
+
+}

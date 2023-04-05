@@ -1,0 +1,11 @@
+
+public class Banco {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Cuenta c = new Cuenta(100);
+		c.RetirarDinero(100,"Martin");
+		c.RetirarDinero(100, "Andrea");
+	}
+
+}

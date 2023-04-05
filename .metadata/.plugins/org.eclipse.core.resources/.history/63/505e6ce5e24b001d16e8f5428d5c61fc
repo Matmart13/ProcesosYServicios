@@ -1,0 +1,7 @@
+
+public class Cuenta {
+	private int saldo;
+	public Cuenta(int s)(saldo = s;) {
+		// TODO Auto-generated constructor stub
+	}
+}

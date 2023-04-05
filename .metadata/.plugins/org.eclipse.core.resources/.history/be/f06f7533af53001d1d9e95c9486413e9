@@ -1,0 +1,16 @@
+package Direcciones;
+
+public class TestInetAdress {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		TestInetAdress dir = null;
+		try {
+			System.out.println("=================================");
+			System.out.println("Salida para una url: " + args[0]);
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+	}
+
+}

@@ -1,0 +1,4 @@
+//Politica 4
+	grant{
+	permission java.net.SocketPermission "localhost","accept,listen";
+	};

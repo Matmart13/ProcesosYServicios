@@ -1,0 +1,17 @@
+package Direcciones;
+
+import java.net.URL;
+
+public class Ejemplo1URL {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		URL url;
+		try {
+			
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+	}
+
+}

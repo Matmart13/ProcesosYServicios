@@ -1,0 +1,22 @@
+package Ejemplo1;
+
+public class Ejemplo1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String t[] = {"java.class.path","java.home", "java.vendor","user.dir","user.home", "user.name"};
+		
+		//Gestor de Seguridad:
+		//System.out.println(new SecurityManager());
+		for (int i = 0; i < t.length; i++) {
+			System.out.println("Propiedad:" + t[i]);
+			try {
+				String s = System.getProperty(t[i]);
+				System.out.println("\t==> " + s);
+			} catch (Exception e) {
+				// TODO: handle exception
+			}
+		}
+	}
+
+}

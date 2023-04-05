@@ -1,0 +1,7 @@
+
+public class SacarDinero extends Thread{
+private Cuenta c;
+public SacarDinero(String n, Cuenta c ) {
+	super(n);
+}
+}

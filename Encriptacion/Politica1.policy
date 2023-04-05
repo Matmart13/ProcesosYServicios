@@ -1,0 +1,8 @@
+//Politica1.policy
+grant{
+permission java.util.PropertyPermission "java.class.path","read";
+permission java.util.PropertyPermission "java.home","read";
+permission java.util.PropertyPermission "user.home","read";
+permission java.util.PropertyPermission "user.name","read";
+permission java.util.PropertyPermission "user.dir","read";
+};

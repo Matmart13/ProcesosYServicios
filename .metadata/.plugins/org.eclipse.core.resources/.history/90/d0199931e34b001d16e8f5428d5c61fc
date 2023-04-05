@@ -1,0 +1,19 @@
+
+public class Cuenta {
+	private int saldo;
+	public Cuenta(int s) {
+		// TODO Auto-generated constructor stub
+		this.saldo = s;
+	}
+	int getSaldo() {
+		return saldo;
+	}
+	void restar(int cantidad) {
+		saldo = saldo - cantidad;
+	}
+	void RetirarDinero(int cant, String nom) {
+		if(getSaldo() >= cant) {
+			System.out.println(nom + " Se va ");
+		}
+	}
+}

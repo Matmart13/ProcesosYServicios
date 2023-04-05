@@ -1,0 +1,1 @@
+Escritura en una linea en fichero
